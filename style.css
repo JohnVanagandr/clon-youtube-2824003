@@ -14,8 +14,8 @@ body{
   grid-template-columns: 240px 1fr ;
   grid-template-rows: 56px 1fr;
   grid-template-areas: 
-  'header header'
-  'sidebar container';
+  'header   header'
+  'sidebar  container';
   height: 100vh;
 }
 h1{
@@ -203,4 +203,40 @@ HEADER STARTS
 .notifications:hover{
   background-color: #313131;
   /* border-radius: 50%; */
+}
+
+/*
+----------------------
+Sidebar start
+---------------------
+*/
+
+.sidebar{
+  grid-area:sidebar;
+  background-color: #212121;
+  padding-top: 10px;
+}
+
+.sidebar-items{
+  display: flex;
+  flex-direction: column;
+  padding: 0 14px;
+}
+
+.sidebar-item{
+  color: #fff;
+  text-decoration: none;
+  padding: 0 14px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-radius: 10px;
+  transition: 1s;
+}
+.sidebar-item:hover{
+  background-color: #4c4c4c;
+}
+.more{
+  margin-bottom: 10px;
 }
